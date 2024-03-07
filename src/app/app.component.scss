@@ -1,0 +1,8 @@
+// Login form
+.card-body {
+  @apply max-[400px]:p-4;
+
+  .input {
+    @apply max-[400px]:w-full;
+  }
+}

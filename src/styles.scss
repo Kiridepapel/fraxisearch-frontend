@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input, .select {
+  outline: none !important;
+  &:focus {
+    outline: none !important;
+  }
+
+  input, select {
+    outline: none !important;
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.mockup-phone {
+  @apply max-[400px]:m-0 max-[400px]:w-full;
+  
+  .phone-1 {
+    @apply max-[400px]:w-full;
+  }
+}
+
+.mockup-code {
+  @apply max-[400px]:min-w-full;
+}

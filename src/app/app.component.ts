@@ -11,4 +11,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'fraxisearch-frontend';
+  countdownValue: number = 5;
+
+  constructor() {
+    setInterval(() => {
+      this.countdownValue--;
+      if (this.countdownValue === 0) {
+        this.countdownValue = 60;
+      }
+    }, 1000);
+  }
 }
